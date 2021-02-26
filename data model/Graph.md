@@ -11,3 +11,10 @@ Graphs consist of nodes and edges
 ##### <U>RDF Graph:-</U>
 
 An `RDF graph` is a `directed, labeled (DLG)` 
+  * Works in a sort of Object oriented passion, so we can introduce a class `type`
+  * Polymorphism and reasoning
+        ![img/RDF-infer.png](img/RDF-infer.png)
+  * We can infer the data from existing node/Vertices
+  * Nodes & Edges are named using URIs for machine readability  
+  
+#### Property Graph
