@@ -1,3 +1,14 @@
+#### What makes a good graph 
+
+Connected data queries ?
+
+Questions we want to ask of our data require us to understand
+
+    1. Types of relationship
+    2. Strength, weight or quality of relationships
+
+### <U>Property or Vertex</U>
+
 #### When should I make property into a vertex?
 
 1. Relate entities at `query time`
@@ -18,6 +29,9 @@
     * Reduces the number of edges it touch
     * Show me all customers who purchased in `May 2017`. 
     
-    ![reduce_fanout.png](reduce_fanout.png)
+    ![reduce_fanout.png](img/reduce_fanout.png)
 
-#### Vertex or edge?
+###<U> Vertex or edge?</U>
+#### When should I use a vertex instead of edge?
+
+When you want to connect `multiple dimensions(domain entities)` in the context of a fact(or event)
