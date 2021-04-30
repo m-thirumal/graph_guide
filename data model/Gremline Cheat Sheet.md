@@ -6,7 +6,7 @@
 
     g=graph.traversal()
  
- ### `GET/LIST`
+### `GET/LIST`
 | Steps | Meaning |
 | :--:  |  :--:   |
 | V()   | get all vertices in the graph |
@@ -330,9 +330,8 @@
     ==>CREAM PUFF WAR
     ==>CRYPTICAL ENVELOPMENT
 
+### `DROP`
 
- ### `DROP`
-
- ### `DROP using labels`
+### `DROP using labels`
 
     g.V().hasLabel("user", 'mobile', 'email').drop().iterate()
