@@ -6,7 +6,7 @@
 
     g=graph.traversal()
  
- # `GET/LIST`
+ ### `GET/LIST`
 
 ##### List all vertices
 
@@ -16,7 +16,7 @@
 
     g.E()
 
-#### List all vertcies using `LABEL`
+#### List all vertices using `LABEL`
 
     g.V().hasLabel('mobile')
 
@@ -59,7 +59,7 @@
     g.V(1).out('knows').has(age, gt(30)).values('name')
  
 
-## `Access Properties`
+### `Access Properties`
 
 #### Get all specified properties for the current element
 
@@ -89,11 +89,13 @@
     ==>[name:[josh],age:[32]]
     ==>[name:[peter],age:[35]]
 
-# `Traversing the Graph`
+### `Traversing the Graph`
 
+| Steps | Meaning |
+| :--:  |  :--:   |
+| out(label1, label2, …​) | Get all adjacent vertices connected by outgoing edges with the specified labels
 
-
- # `DROP`
+ ### `DROP`
 
  ### DROP using labels
 
