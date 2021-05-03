@@ -47,18 +47,18 @@
 
 ##### `List all the outgoing edges` 
 
-    g.V(1).outE('knows')
+    g.V(1).outE('knows').elementMap()
 
 ##### `List all incoming vertices` 
 
 
-###### `Long version`
+###### Get the vertices which has edges with propery of `knows`. `Long version`
 
-    g.V(1).outE('knows').inV().values('name')
+    g.V(1).outE('knows').inV().elementMap()
     
 ###### `Short version`
 
-    g.V(1).out('knows').values('names')
+    g.V(1).out('knows').elementMap()
     
 
 ##### `List with conditions`
@@ -243,6 +243,12 @@
     ==>[datastax,develops,dse graph]
     ==>[datastax,likes,tinkerpop]
     ==>[dse graph,uses,tinkerpop]
+
+#### UPSERT GetOrCreate
+
+    g.V(user).fold().coalesce(__.unfold(), __.addV('user').property(T.id, user)).next()
+        g.V(user).fold().coalesce(__.unfold(), __.addV('email').property(T.id, email)).next()
+        g.V(user).fold().coalesce(__.unfold(), __.addV('mobile').property(T.id, mobile)).next()
 
 ## `Paths`
 
