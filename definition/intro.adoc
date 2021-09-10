@@ -1,0 +1,51 @@
+==== Directed Graph
+
+Relationship goes one way.
+
+Example::
+    1. *Twitter->* Morty follows Rick 
+    2. Thirumal drives *->* his car
+
+==== Undirected Graph
+
+Relationship goes both way
+
+Example::
+    1. Rick and Morty plays *<-->* game
+
+==== Adjacent Nodes
+
+A *Egdge* connects two *Vertex*.
+
+==== Degree of a Node
+
+    The degree of a Node = number of incident edges 
+
+==== Paths
+
+A series of edges links nodes `A` to `Z`.
+
+===== Undirected cyclic Graph
+
+===== Undirected Acyclic Graph
+
+===== Directed cyclic Graph
+
+===== Directed Acyclic Graph [DAGs]
+
+==== Connected Graph
+
+Every node is `connected` to every other node via series of edge
+
+==== Disconnected Graph
+
+==== Connected Graph with no Cycle
+
+Tree::
+    Tree are great for depicting hieraachical relationship
+
+Forest::
+
+    Set of disjoint Trees
+
+
