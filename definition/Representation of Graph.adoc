@@ -1,4 +1,4 @@
-==== The ways to representaion of Graphs
+==== The ways to representation of Graphs
 
 1. Adjacency Matrix
 * The adjacency matrix of a graph with `N` nodes is an `N x N` matix.
@@ -19,4 +19,13 @@
 
 2. Adjacency List
 
+Each vertex/note maintains a `linked list` of adjacent vertex
+
+   Flaws::
+    * In list order matters, thus same graph can have multiple representation
+    * Deletion of node is inefficient
+        ** Requires iteration through all adjacent node
+
 3. Adjacency Sets
+
+Every vertex maintains a set of adjacent nodes
