@@ -29,3 +29,5 @@ Each vertex/note maintains a `linked list` of adjacent vertex
 3. Adjacency Sets
 
 Every vertex maintains a set of adjacent nodes
+
+    A = {A, B}
