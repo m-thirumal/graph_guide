@@ -52,6 +52,11 @@
 ##### `List all incoming vertices` 
 
 
+#### `Search Edges by multiple labels`
+
+    g.E().or(hasLabel(startingWith('')), hasLabel('')).elementMap()
+
+
 ###### Get the vertices which has edges with propery of `knows`. `Long version`
 
     g.V(1).outE('knows').inV().elementMap()
