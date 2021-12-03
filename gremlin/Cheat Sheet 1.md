@@ -343,6 +343,10 @@
 
 ### `DROP`
 
+### Drop property
+
+    g.V().properties('key').drop()
+
 ### `DROP using labels`
 
     g.V().hasLabel("user", 'mobile', 'email').drop().iterate()
