@@ -161,6 +161,12 @@
     gremlin> g.V(1).as("other").out("knows").where(gt("other")).by("age").valueMap()
     ==>[name:[josh],age:[32]]
 
+### Traverse using `REPEAT`
+
+    g.V(1).repeat(out()).times(5).path().by(elementMap())
+    
+    This will traverse with depth 5
+
 ### `Aggregations`
 
 | Steps | Meaning |
